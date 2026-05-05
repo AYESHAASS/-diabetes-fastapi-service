@@ -1,0 +1,17 @@
+name: Sync to Hugging Face hub
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  sync-to-hub:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Push to hub
+        run: |
+          git remote add hf https://x-token:${{ secrets.HF_TOKEN }}@huggingface.co/spaces/Ayeshaaaa17/diabetes-prediction-api
+          git push --force hf main
