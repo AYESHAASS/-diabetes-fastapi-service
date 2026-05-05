@@ -18,4 +18,8 @@ COPY ./model_bin ./model_bin
 EXPOSE 8000
 
 # Command to run the API
+<<<<<<< HEAD
 CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7860"]
+=======
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "7860"]
+>>>>>>> 7408aa1597e107e5381463d0761bcdaeb2c7af9e
