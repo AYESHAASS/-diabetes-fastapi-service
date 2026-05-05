@@ -1,4 +1,4 @@
-name: Sync to Hugging Face hub
+name: Sync to Hugging Face Hub
 on:
   push:
     branches: [main]
@@ -13,9 +13,6 @@ jobs:
           fetch-depth: 0
           lfs: true
       - name: Push to hub
-        uses: huggingface/github-action@v1
-        with:
-          hf_token: ${{ secrets.HF_TOKEN }}
-          repo_id: Ayeshaaaa17/diabetes-prediction-api
-          repo_type: space
-          path_in_repo: .
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: git push --force https://AYESHAASS:$HF_TOKEN@huggingface.co/spaces/AYESHAASS/-diabetes-fastapi-service main
