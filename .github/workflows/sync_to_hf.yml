@@ -11,10 +11,9 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          lfs: true
       - name: Push to hub
-        uses: huggingface/github-action@v1
-        with:
-          hf_token: ${{ secrets.HF_TOKEN }}
-          repo_id: Ayeshaaaa17/diabetes-prediction-api
-          repo_type: space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          git remote add hf https://x-token:$HF_TOKEN@huggingface.co/spaces/Ayeshaaaa17/diabetes-prediction-api
+          git push --force hf main
