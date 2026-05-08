@@ -66,8 +66,8 @@ Methodology: The model was trained on the Frankfurt Diabetes Dataset. I utilized
 📬 About the Author
 Ayesha Shahid — ML Researcher | Healthcare AI
 BS Information Technology (CGPA: 3.66/4.00)
-GitHub: AYESHAASS
-LinkedIn: [Your LinkedIn Link Here]
+GitHub: https://github.com/AYESHAASS
+LinkedIn: https://www.linkedin.com/in/ayesha-shahid-681b38408/
 
 
 📦 How to Run Locally
