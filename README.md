@@ -8,13 +8,13 @@
 
 A production-grade ML microservice that predicts diabetes risk using a **Voting Ensemble of XGBoost and Random Forest**, served via **FastAPI** and deployed with **Docker** on HuggingFace Spaces.
 
----
+
 
 ## 🚀 Live Demo
 
 **API Docs (Swagger UI):** [https://ayeshaaaa17-diabetes-prediction-api.hf.space/docs](https://ayeshaaaa17-diabetes-prediction-api.hf.space/docs)
 
-Try the `/predict` endpoint directly from your browser — no setup required.
+Try the `/predict` endpoint directly from your browser, no setup required.
 
 ---
 
@@ -61,16 +61,21 @@ Precision	91.00%
 Recall	85.40%
 F1-Score	0.88
 Methodology: The model was trained on the Frankfurt Diabetes Dataset. I utilized a Pipeline to ensure that data scaling (StandardScaler) and imputation were applied consistently during both training and inference, eliminating data leakage.
+
+
 📬 About the Author
 Ayesha Shahid — ML Researcher | Healthcare AI
 BS Information Technology (CGPA: 3.66/4.00)
 GitHub: AYESHAASS
 LinkedIn: [Your LinkedIn Link Here]
+
+
 📦 How to Run Locally
 code
 Bash
 # Clone the repo
 git clone https://github.com/AYESHAASS/-diabetes-fastapi-service.git
+
 
 # Run with Docker
 docker build -t diabetes-api .
